@@ -1,0 +1,76 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #2D3250;
+            
+        }
+        
+        form {
+            background-color: #222035;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 750px;
+            margin: 0 auto;
+            
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            padding: 10px;
+            color: rgb(255, 255, 255);
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #3923ff;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #222035;
+            color: aliceblue;
+        }
+        label{
+            background-color: #222035;
+            border: 1px solid #3923ff;
+            color: aliceblue;
+            border-radius: 5px;
+            padding: 8px 12px;
+            transition: .2s all ease;
+            
+        }
+        label:hover{
+            background-color: #3923ff;
+            color: aliceblue;
+        }
+        input[type="checkbox"]:checked + label{
+            background-color: #3923ff;
+        }
+        input[type="checkbox"]{
+            opacity: 0;
+        }
+        option{
+            background-color: aliceblue;
+            color: #222035;
+        }
+        
+        button {
+            background-color: #2D3250;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+        #can{
+            background-color: red;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }

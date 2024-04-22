@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <title>Gerson Martinez - 4°A - MAT</title>
+</head>
+<body bgcolor="#090c1a ">
+    <style>
+        body{
+            background-image: url('recursos/granuladito.webp');
+        }
+    </style>
+<center>
+    <font size="9" color="#F8B179" face="Tahoma">
+        Práctica de Programación 2
+    </font>
+    <br>
+    <h3>Martinez Roman Gerson Giovanni</h3>
+    <h6>4°A . PROGRAMACION . MATUTINO</h6>
+</center>
+<br>
+<div class="linea"></div>
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="practicasprogramacion.html">Prácticas de programación</a></li>
+        <li><a href="practicasjs.html">Prácticas de JavaScript</a></li>
+        <li><a href="actividades.html">Actividades de Aprendizaje</a></li>
+        <li><a href="acercade.html">Acerca de mí</a></li>
+    </ul>
+</nav>
+<br>
+<center>
+<p>Se requiere determinar la hipotenusa de un triángulo rectángulo.¿Cómo sería el diagrama de flujo y el pseudocódigo que representen el algoritmo para obtenerla?</p>
+</center>
+<br>
+<nav class="listprcp2">
+    <ol>
+        <li>INICIO</li>
+        <li>Leer catA</li>
+        <li>Leer catB</li>
+        <li>Hacer h_c = (catA)^2 + (catB)^2</li>
+        <li>Hacer h = raiz_c(h_c)</li>
+        <li>Escribir "La hipotenusa del triángulo rectángulo es: ", h</li>
+        <li>Fin.</li>
+    </ol>
+</nav>
+    <div class="hipoxd">
+    <h2>Calcular Hipotenusa</h2>
+    <label for="catA">Cateto A:</label><br>
+    <input type="number" id="catA" step="0.01">
+    <br>
+    <label for="catB">Cateto B:</label><br>
+    <input type="number" id="catB" step="0.01">
+    <br><br>
+    <button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
+    <p>La hipotenusa del triángulo rectángulo es: <span id="resultado"></span></p>
+    </div>
+    <br><br><br><br><br>
+    <script type="text/JavaScript" src="scripts/hipotenusa.js"></script>
+</body>
+<footer>
+    <CENTER><H6> Derechos Reservados G.G.M.R. 2024 - CBTIs 166</H6></CENTER>
+</footer>
+</html>
