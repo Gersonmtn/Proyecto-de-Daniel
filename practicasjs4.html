@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/style_cal.css">
+    <title>Gerson Martinez - 4�A - MAT</title>
+</head>
+<body bgcolor="#090c1a ">
+    <style>
+        body{
+            background-image: url('recursos/granuladito.webp');
+        }
+    </style>
+<center>
+    <font size="9" color="#78C461" face="Tahoma">
+        Pr�ctica 4 JavaScript
+    </font>
+    <br>
+    <h3>Martinez Roman Gerson Giovanni</h3>
+    <h6>4�A . PROGRAMACION . MATUTINO</h6>
+</center>
+<br>
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="practicasprogramacion.html">Pr�cticas de programaci�n</a></li>
+        <li><a href="practicasjs.html">Pr�cticas de JavaScript</a></li>
+        <li><a href="actividades.html">Actividades de Aprendizaje</a></li>
+        <li><a href="acercade.html">Acerca de m�</a></li>
+    </ul>
+</nav>
+<br>
+<br>
+<center>
+    <h3> Entrada de datos por teclado</h3>
+<br>
+<br>
+<table>
+    <tr><td>Calculadora que calcula cosas para calcular
+    </td>
+</table>
+</center>
+<div class="calcula">
+    <input type="text" name="n1" id="num1" placeholder="Ingrese un number"><br>
+    <input type="text" name="n2" id="num2" placeholder="Ingrese otro number"><br>
+    <input type="text" name="res" id="resultado" placeholder="Respuesta" disabled="XD"><br>
+    <input class="bt-st" type="button" value="Sumar" onclick="suma()">
+    <input class="bt-st" type="button" value="Restar" onclick="resta()">
+    <input class="bt-st" type="button" value="Multiplicar" onclick="multiplicacion()">
+    <input class="bt-st" type="button" value="Dividir" onclick="division()">
+</div>
+<script>
+    function suma(){
+        var n1=Number(document.getElementById("num1").value);
+        var n2=Number(document.getElementById("num2").value);
+        var res= n1+n2;
+        document.getElementById("resultado").value=res;
+    }
+    function resta(){
+        var n1=Number(document.getElementById("num1").value);
+        var n2=Number(document.getElementById("num2").value);
+        var res= n1-n2;
+        document.getElementById("resultado").value=res;
+    }
+    function multiplicacion(){
+        var n1=Number(document.getElementById("num1").value);
+        var n2=Number(document.getElementById("num2").value);
+        var res= n1*n2;
+        document.getElementById("resultado").value=res;
+    }
+    function division(){
+        var n1=Number(document.getElementById("num1").value);
+        var n2=Number(document.getElementById("num2").value);
+        var res= n1/n2;
+        document.getElementById("resultado").value=res;
+    }
+</script>
+</body>
+<footer>
+    <CENTER><H6> Derechos Reservados G.G.M.R. 2024 - CBTIs 166</H6></CENTER>
+</footer>
+</html>

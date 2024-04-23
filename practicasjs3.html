@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/form.css">
+    <title>Gerson Martinez - 4°A - MAT</title>
+    <!-- aqui comienza mi script-->
+    <script language="javascript">
+        <!--
+        function Subir() {
+            var formulario = "";
+            var usuario = document.form1.usuario.value;
+            var nombre = document.form1.nombre.value;
+            var apellido = document.form1.apellido.value;
+            var email = document.form1.email.value;
+            var clave1 = document.form1.clave1.value;
+            var clave2 = document.form1.clave2.value;
+            var hobbies = "";
+            var b = document.form1.hobby.length;
+            for (var a = 0; a < b; a++) {
+                if (document.form1.hobby[a].checked) hobbies += document.form1.hobby[a].value + ", ";
+            }
+            var pais = document.form1.pais.value;
+            var sexo = document.form1.sexo.value;
+            if (usuario == "" || nombre == "" || apellido == "" || pais == "") {
+                alert("Los campos con asterisco son obligatorios!!!");
+                return false;
+            }
+            if (hobbies.length == 0) {
+                alert("Debes seleccionar al menos un hobby!!");
+                return false;
+            }
+            if (clave1 != clave2 || clave1 == "") {
+                alert("Las claves deben ser iguales y no pueden estar en blanco!!!");
+                return false;
+            }
+            if (email == "") email = "No informado";
+            if (sexo == "") sexo = "No informado";
+            formulario = "Usuario: " + usuario + "\nNombre: " + nombre + "\nApellido: " + apellido + "\nE-mail: " + email + "\nClave: " + clave1 + "\nHobbies: " + hobbies + "\nPais: " + pais + "\nSexo: " + sexo;
+            alert(formulario);
+        }
+        //-->
+        </script>
+</head>
+<body bgcolor="#090c1a ">
+    <style>
+        body{
+            background-image: url('recursos/granuladito.webp');
+        }
+    </style>
+<center>
+    <font size="9" color="#6591CF" face="Tahoma">
+        Práctica 3 JavaScript
+    </font>
+    <br>
+    <h3>Martinez Roman Gerson Giovanni</h3>
+    <h6>4°A . PROGRAMACION . MATUTINO</h6>
+</center>
+<br>
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="practicasprogramacion.html">Prácticas de programación</a></li>
+        <li><a href="practicasjs.html">Prácticas de JavaScript</a></li>
+        <li><a href="actividades.html">Actividades de Aprendizaje</a></li>
+        <li><a href="acercade.html">Acerca de mí</a></li>
+    </ul>
+</nav>
+<br>
+<br>
+<form name="form1" method="POST" action="">
+    <table border="0" cellpadding="0" cellspacing="0" width="400">
+    <tr>
+        <td width="50%">Ingresa tu usuario: (*)</td>
+        <td width="50%"><input type="text" name="usuario" id="usuario" value=""></td>
+    </tr>
+    <tr>
+        <td width="50%">Ingresa tu nombre: (*)</td>
+        <td><input type="text" name="nombre" id="nombre" value=""></td>
+    </tr>
+    <tr>
+        <td width="50%">Ingresa tu apellido: (*)</td>
+        <td><input type="text" name="apellido" id="apellido" value=""></td>
+    </tr>
+    <tr>
+        <td width="50%">Ingresa tu correo electrónico:</td>
+        <td width="50%"><input type="text" name="email" id="email" value=""></td>
+    </tr>
+    <tr>
+        <td width="50%">Ingresa una password: (*)</td>
+        <td width="50%"><input type="password" name="clave1" id="clave1" value=""></td>
+    </tr>
+    <tr>
+        <td width="50%">Repite la password: (*)</td>
+        <td width="50%"><input type="password" name="clave2" id="clave2" value=""></td>
+    </tr>
+    <tr>
+        <td width="50%" align="left" valign="top">Selecciona tus hobbies: (*)</td>
+        <td width="50%">
+            <input type="checkbox" name="hobby" value="correr" id="check"><label for="check">Correr</label><br><br>
+            <input type="checkbox" name="hobby" value="programa" id="check2"><label for="check2">Programar</label><br><br>
+            <input type="checkbox" name="hobby" value="deportes" id="check3"><label for="check3">Deportes</label><br><br>
+            <input type="checkbox" name="hobby" value="mulsital" id="check4"><label for="check4">Meditar</label><br><br>
+            <input type="checkbox" name="hobby" value="Vinja" id="check5"><label for="check5">Cine</label><br><br>
+            <input type="checkbox" name="hobby" value="cualjogra" id="check6"><label for="check6">Leer</label><br><br>
+            <input type="checkbox" name="hobby" value="videojuegos" id="check7"><label for="check7">Video Juegos</label><br><br>
+        </td>
+        
+    </tr>
+    <tr>
+        <td width="50%">Pais: (*)</td>
+        <td width="50%">
+            <select name="pais" id="pais">
+            <option value="---">---</option>
+            <option value="argentina">Mexico</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="uruguay">Uruguay</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td width="50%">Sexo:</td>
+        <td width="50%">
+            <input type="radio" name="sexo" value="f">Femenino
+            <input type="radio" name="sexo" value="m">Masculino
+            <input type="radio" name="sexo" value="">Otro
+        </td>
+    </tr>
+    <tr>
+        <td width="50%">
+            <button type="button" name="boton" onClick="Subir()">Crear usuario</button>
+        </td>
+        <td width="50%">
+            <button id="can" type="reset" name="botonr">Cancelar</button>
+        </td>
+    </tr>
+    </table>
+    </form>
+</body>
+<footer>
+    <CENTER><H6> Derechos Reservados G.G.M.R. 2024 - CBTIs 166</H6></CENTER>
+</footer>
+</html>

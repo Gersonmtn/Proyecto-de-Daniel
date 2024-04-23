@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'Heit';
+    src: url(/fonts/Heightie-36802353/Heightie.otf);
+}
+@font-face {
+    font-family: 'Anton-regular';
+    src: url(/fonts/Anton/Anton-Regular.ttf);
+}
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu a {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    border-radius: 5px;
+    padding: .8em;
+    padding-left: .9em;
+    padding-right: .9em;
+    display: inline-block;
+    background-color: #1d1e33;
+    text-align: center;
+    line-height: auto;
+    padding-top: .7em;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: transform 0.7s;
+    color: aliceblue;
+    margin: 7px;
+    transition: all 300ms;
+}
+
+font {
+    color: #b941ff;
+}
+
+a.resin {
+    background-color: #b941ff;
+    color: #ffffff;
+    transform: scale(1.07);
+    box-shadow: 4px 4px 0px #d780ff;
+    animation-name: subirBajar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+a.respro {
+    background-color: #b941ff;
+    color: #ffffff;
+    transform: scale(1.07);
+    box-shadow: 4px 4px 0px #d780ff;
+    animation-name: subirBajar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+a.resact {
+    background-color: #b941ff;
+    color: #ffffff;
+    transform: scale(1.07);
+    box-shadow: 4px 4px 0px #d780ff;
+    animation-name: subirBajar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+a.resprac {
+    background-color: #b941ff;
+    color: #ffffff;
+    transform: scale(1.07);
+    box-shadow: 4px 4px 0px #d780ff;
+    animation-name: subirBajar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+a.resacer {
+    background-color: #b941ff;
+    color: #ffffff;
+    transform: scale(1.07);
+    box-shadow: 4px 4px 0px #d780ff;
+    animation-name: subirBajar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+audio {
+    width: 300px;
+    height: 25px;
+    margin-top: 10px;
+
+}
+
+.menu a:hover {
+    background-color: #ae00ff;
+    color: #ffffff;
+    scale: 1.07;
+    transition-duration: 0.4s;
+    box-shadow: 4px 4px 0px #d780ff;
+
+}
+
+@keyframes subirBajar {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu ul li a:hover+ul,
+.menu ul li ul:hover {
+    display: block;
+}
+
+h2,
+h6,
+p,
+td,
+h5,
+h3,
+h4,
+h7 {
+    color: #C0C0C0;
+}
+
+.title-about{
+    font-family: 'Tahoma';
+    font-size: 65px;
+    color: rgba(255, 255, 255,60%);
+    max-width: 450px;
+    animation-name: imagenRevelacion;
+    animation-duration: 3s;
+}
+.sub-name{
+    font-size: 35px;
+    color: #d780ff;
+    font-family: Verdana;
+    max-width: 400px;
+    animation-name: imagenRevelacion;
+    animation-duration: 1s;
+}
+.sub-grad{
+    font-family: Verdana ;
+    font-size: 15px;
+    color: rgba(255, 255, 255,60%);
+    max-width: 400px;
+    animation-name: imagenRevelacion;
+    animation-duration: 4s;
+}
+.info-photo{
+    display: flex;
+    justify-content: space-between;
+}
+.pou_imagen{
+    margin-top: 35px;
+    animation-name: imagenMovimiento;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10rem;
+}
+
+@keyframes imagenRevelacion {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes imagenMovimiento {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(-55px);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+.gustos-info{
+    background-color: #42466970;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+    
+}
+.gustos-info:hover{
+    opacity: .2;
+}
+.textoG{
+    max-width: 300px;
+    font-size: 40px;
+    color: #c6c8ca;
+    text-align: center;
+    position: absolute;
+    animation-name: animacionEntrada;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+@keyframes animacionEntrada {
+    0%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(200%,-180%);
+    }
+}
+.list-gustos{
+    color: #ffffff;
+    line-height: 3em;
+    font-size: 20px;
+    font-family: Verdana;
+}
+#gustos-title{
+    text-align: left;
+    color: #ae00ff;
+    font-size: 30px;
+    font-family: Tahoma;
+    font-weight: 600;
+}
+.contain-inf{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.areaxd {
+    position: absolute;
+    right: 9cm;
+    top: 8cm;
+}
+
+label {
+    color: #C0C0C0;
+}
+
+.hipoxd {
+    position: absolute;
+    right: 9cm;
+    top: 8cm;
+}
+
+#resultado {
+    padding-bottom: 3px;
+    padding-right: 4px;
+    border-bottom: 2px solid #F8B179;
+    border-right: 2px solid #F8B179;
+}
+
+/*Esta partesita es para que el menu al hacer scrol
+hacia abajo se mandetenga arriba*/
+nav {
+    position: sticky;
+    top: 0;
+}
+
+td {
+    font-family: "Inria Sans", sans-serif;
+}
+
+.xd,
+.xd2 {
+    color: #c6c8ca;
+    text-decoration: none;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2D3250;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.xd:hover,
+.xd2:hover {
+    background-color: #F8B179;
+    color: #2D3250;
+}
+
+.xd {
+    padding-right: 6.3em;
+}
+
+.tablita {
+    background-color: #424669;
+    border-radius: 5px;
+    padding: 10px;
+    /*border: 1px solid #d3d4da;*/
+}
+
+.tablitapp {
+    background-color: #424669;
+    border-radius: 5px;
+    padding: 10px;
+    /*border: 1px solid #d3d4da;*/
+}
+
+.tablitapp td {
+    background-color: #2D3250;
+    border-radius: 5px;
+}
+
+.zz1,
+.zz2 {
+    text-decoration: none;
+    color: #C0C0C0;
+    padding: 90px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.zz1:hover,
+.zz2:hover {
+    background-color: #F8B179;
+    color: #2D3250;
+}
+
+td,
+tr {
+    padding: 10px;
+}
+
+.pou_imagen {
+    border: 3px dashed #c6c8ca;
+}
+
+/*Tabla de la actividad 1 de practicas de programación*/
+.tblprcp1 {
+    background-color: #F8B179;
+}
+
+.tblprcp1 td,
+tr {
+    color: #2D3250;
+}
+
+.trprcp1 {
+    background-color: #2D3250;
+}
+
+.trprcp1 td {
+    color: #F8B179;
+}
+
+.listprcp1 ol {
+    color: #C0C0C0;
+}
+
+.listprcp1 {
+    padding-left: 8cm;
+}
+
+.listprcp2 {
+    padding-left: 7cm;
+}
+
+.imgprcp1 {
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+/*Tabla de la actividad 2 de practicas de programación*/
+.tblprcp2 {
+    background-color: #F8B179;
+
+}
+
+.tblprcp2 td,
+tr {
+    color: #2D3250;
+}
+
+.trprcp2 {
+    background-color: #2D3250;
+}
+
+.trprcp2 td {
+    color: #F8B179;
+}
+
+.listprcp2 ol {
+    color: #C0C0C0;
+}
+
+.prog {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.peli1 {
+    display: flex;
+    align-items: center;
+    background-color: #1d1e33;
+    border: .5px solid #C0C0C0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagendepeli {
+    flex-basis: 40%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.imagendepeli img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    flex-basis: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.contenido h2 {
+    color: #d780ff;
+}
+
+.linkapelicula {
+    text-decoration: none;
+    transition-duration: 0.4s;
+    filter: brightness(80%);
+}
+
+.linkapelicula p {
+    color: #ffffff;
+}
+
+.linkapelicula:hover {
+    filter: contrast(1);
+    
+}
+
+.peli1:hover {
+    transform: scale(1.04);
+
+    transition-duration: 0.3s;
+}

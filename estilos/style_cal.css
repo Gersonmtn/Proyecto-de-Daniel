@@ -1,0 +1,55 @@
+.calcula{
+    text-align: center;
+    margin-top: 5rem;
+
+}
+#num1,#num2{
+	margin-bottom: 15px;
+	height: 30px;
+	font-size: 15px;
+	padding-left: 10px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	transition: .2s background;
+	margin-bottom: 1.5rem;
+}
+#resultado{
+	max-width: 192px;
+	margin-top: 5px;
+	text-align: right;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	height: 30px;
+	font-size: 16px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	transition: .2s background;
+	margin-bottom: 1.5rem;
+	color: #C587FF;
+}
+#num1:hover, #num2:hover{
+	background: #AEB5C8;
+	color: black;
+}
+
+.bt-st{
+	text-align: center;
+	display: inline-block;
+	background: #1d1e33;
+	border:none;
+	color: white;
+	transition: .4s background;
+	border-radius: 5px;
+	height: 40px;
+	font-size: 17px;
+	margin: 0 7px;
+}
+.bt-st:hover{
+		background: white;
+		color: black;
+
+	}
