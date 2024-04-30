@@ -12,6 +12,7 @@
     margin: 0;
     list-style: none;
     justify-content: center;
+    background-image: url("pou_imagen");
 }
 
 .menu a {
@@ -203,7 +204,7 @@ h7 {
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #C0C0C0;
-    
+
 }
 .gustos-info:hover{
     opacity: .2;
@@ -221,7 +222,7 @@ h7 {
 @keyframes animacionEntrada {
     0%{
         opacity: 1;
-        
+
     }
     100%{
         opacity: 1;
@@ -456,7 +457,7 @@ tr {
 
 .linkapelicula:hover {
     filter: contrast(1);
-    
+
 }
 
 .peli1:hover {
