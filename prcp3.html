@@ -36,19 +36,29 @@
 <p>En esta practica puedes calcular el Área de un triangulo :).</p>
 </center>
 <br>
+<style>
+    h1{
+        color: aliceblue;
+        text-align: center;
+    }
+    #formularioDiagrama{
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
 <h1>Cálculo de Sueldo Semanal</h1>
-<form>
-    <label for="horas">Horas trabajadas:</label>
-<input type="text" id="horas" required>
-<br>
-<label for="pago">Pago por hora:</label>
-<input type="text" id="pago" required>
-    <br>
-    <button type="button" onclick="calcularSueldo()">Calcular Sueldo</button>
-</form>
-
-
-<script src="sueldo.js"></script>
+    <div id="formularioDiagrama">
+    <div>
+    <form id="formulario">
+        <label for="horas-trabajadas">Horas trabajadas:</label>
+        <input type="number" id="horas-trabajadas" name="horas-trabajadas" required>
+        <button type="button" onclick="calcularSueldo()">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+    </div>
+    <img src="capturasjs/diagrama.png" width="600" height="200">
+    </div>
+    <script src="scripts/sueldo.js"></script>
 </body>
 <footer>
     <CENTER><H6> Derechos Reservados G.G.M.R. 2024 - CBTIs 166</H6></CENTER>

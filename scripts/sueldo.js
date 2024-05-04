@@ -1,27 +1,18 @@
 function calcularSueldo() {
-    const horasTrabajadas = document.getElementById("horas").value;
-    const pagoPorHora = document.getElementById("pago").value;
+    const horasTrabajadas = parseFloat(document.getElementById('horas-trabajadas').value);
+    const salarioBase = 50; // Supongamos un salario base de $50 por hora
 
-    // Validar los valores ingresados
-    if (isNaN(horasTrabajadas) || isNaN(pagoPorHora) || horasTrabajadas < 0 || pagoPorHora < 0) {
-        alert("Por favor, ingrese valores numéricos válidos para las horas trabajadas y el pago por hora.");
-        return;
-    }
-
-    const horasTrabajadasNumero = parseFloat(horasTrabajadas);
-    const pagoPorHoraNumero = parseFloat(pagoPorHora);
     let sueldo;
 
-    if (horasTrabajadasNumero <= 40) {
-        sueldo = horasTrabajadasNumero * pagoPorHoraNumero;
-    } else if (horasTrabajadasNumero <= 45) {
-        sueldo = 40 * pagoPorHoraNumero + (horasTrabajadasNumero - 40) * 2 * pagoPorHoraNumero;
-    } else if (horasTrabajadasNumero <= 50) {
-        sueldo = 40 * pagoPorHoraNumero + 5 * 2 * pagoPorHoraNumero + (horasTrabajadasNumero - 45) * 3 * pagoPorHoraNumero;
+    if (horasTrabajadas <= 40) {
+        sueldo = horasTrabajadas * salarioBase;
+    } else if (horasTrabajadas <= 45) {
+        sueldo = 40 * salarioBase + (horasTrabajadas - 40) * (salarioBase * 2);
+    } else if (horasTrabajadas <= 50) {
+        sueldo = 40 * salarioBase + 5 * (salarioBase * 2) + (horasTrabajadas - 45) * (salarioBase * 3);
     } else {
-        alert("No es posible trabajar más de 50 horas.");
-        return;
+        sueldo = 'No se permite trabajar más de 50 horas.';
     }
 
-    alert(`El sueldo semanal es: $${sueldo.toFixed(2)}`);
+    document.getElementById('resultado').textContent = `Sueldo semanal: $${sueldo}`;
 }
